@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>IPOS Digital тестовое</title>
+</head>
+
+<body>
+    <div id="btn" class="display-none">
+        <span id="press" class="display-none"></span>
+    </div>
+    <div class="squarts btn">
+        <div class="squart squart-choose squart-1"></div>
+        <div class="squart squart-choose squart-2"></div>
+        <div class="squart squart-choose squart-3"></div>
+        <div class="squart squart-choose squart-4"></div>
+        <span class="press display-none">Нажать</span>
+    </div>
+    <div class="modal display-none">
+        <form class="list ">
+            <select name="mark" id="mark">
+                <option value="">Марка машины</option>
+            </select>
+            <select name="model" id="model" disabled>
+                <option value="">Модель машины</option>
+            </select>
+            <select name="year" id="year" disabled>
+                <option value="">Год</option>
+            </select>
+        </form>
+        <div class="btnModal display-none">Press</div>
+        <input class="date display-none" type="date" min="21.05.2021" max="25.05.2021">
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

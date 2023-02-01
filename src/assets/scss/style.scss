@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+#btn {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid blue;
+    padding-top: 80px;
+    padding-left: 30px;
+    cursor: pointer;
+
+    #press {
+        font-size: 16px;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.squarts {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: 2s rollbtn 5s linear forwards, 2s showbtn 6s linear forwards;
+
+
+    .press {
+        transform: rotate(180deg);
+        font-size: 20px;
+    }
+
+    .squart {
+        position: relative;
+        width: 125px;
+        height: 125px;
+        background-color: red;
+        animation: dn 4s linear forwards;
+
+
+        &-1 {
+            animation: 3s corner-1 1s linear forwards;
+        }
+
+        &-2 {
+            animation: 3s corner-2 1s linear forwards;
+        }
+
+        &-3 {
+            animation: 3s corner-3 1s linear forwards;
+            ;
+        }
+
+        &-4 {
+            animation: 3s corner-4 1s linear forwards;
+        }
+    }
+}
+
+.choose-squarts {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 10px solid blue;
+}
+
+
+.modal {
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    border: 2px solid black;
+    top: 25%;
+    left: 45%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        select {
+            margin-top: 15px;
+        }
+    }
+
+    .btnModal {
+        margin-top: 15px;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input {
+        margin-top: 15px;
+    }
+}
+
+@keyframes showbtn {
+    100% {
+        opacity: 1;
+        border: 10px solid blue;
+    }
+}
+
+@keyframes rollbtn {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes corner-1 {
+    0% {
+        top: 0;
+        left: 0
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        top: - 35vh;
+        left: - 35vw;
+        opacity: 0;
+    }
+}
+
+@keyframes corner-2 {
+    0% {
+        top: 0;
+        left: 0
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        top: - 35vh;
+        left: 35vw;
+        opacity: 0;
+    }
+}
+
+@keyframes corner-3 {
+    0% {
+        top: 0;
+        left: 0
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        top: 35vh;
+        left: - 35vw;
+        opacity: 0;
+    }
+}
+
+@keyframes corner-4 {
+    0% {
+        top: 0;
+        left: 0
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        top: 35vh;
+        left: 35vw;
+        opacity: 0;
+    }
+}
