@@ -18,10 +18,10 @@ body {
     padding-top: 80px;
     padding-left: 30px;
     cursor: pointer;
+}
 
-    #press {
-        font-size: 16px;
-    }
+#btn #press {
+    font-size: 16px;
 }
 
 .display-none {
@@ -41,38 +41,35 @@ body {
     justify-content: center;
     align-items: center;
     animation: 2s rollbtn 5s linear forwards, 2s showbtn 6s linear forwards;
+}
 
+.squarts .press {
+    transform: rotate(180deg);
+    font-size: 20px;
+}
 
-    .press {
-        transform: rotate(180deg);
-        font-size: 20px;
-    }
+.squarts .squart {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    background-color: red;
+    animation: dn 4s linear forwards;
+}
 
-    .squart {
-        position: relative;
-        width: 125px;
-        height: 125px;
-        background-color: red;
-        animation: dn 4s linear forwards;
+.squarts .squart-1 {
+    animation: 3s corner-1 1s linear forwards;
+}
 
+.squarts .squart-2 {
+    animation: 3s corner-2 1s linear forwards;
+}
 
-        &-1 {
-            animation: 3s corner-1 1s linear forwards;
-        }
+.squarts .squart-3 {
+    animation: 3s corner-3 1s linear forwards;
+}
 
-        &-2 {
-            animation: 3s corner-2 1s linear forwards;
-        }
-
-        &-3 {
-            animation: 3s corner-3 1s linear forwards;
-            ;
-        }
-
-        &-4 {
-            animation: 3s corner-4 1s linear forwards;
-        }
-    }
+.squarts .squart-4 {
+    animation: 3s corner-4 1s linear forwards;
 }
 
 .choose-squarts {
@@ -87,7 +84,6 @@ body {
     border: 10px solid blue;
 }
 
-
 .modal {
     width: 200px;
     height: 350px;
@@ -95,29 +91,29 @@ body {
     border: 2px solid black;
     top: 25%;
     left: 45%;
+}
 
-    form {
-        display: flex;
-        flex-direction: column;
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
 
-        select {
-            margin-top: 15px;
-        }
-    }
+.modal form select {
+    margin-top: 15px;
+}
 
-    .btnModal {
-        margin-top: 15px;
-        width: 100px;
-        height: 20px;
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+.modal .btnModal {
+    margin-top: 15px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    input {
-        margin-top: 15px;
-    }
+.modal input {
+    margin-top: 15px;
 }
 
 @keyframes showbtn {
@@ -136,7 +132,7 @@ body {
 @keyframes corner-1 {
     0% {
         top: 0;
-        left: 0
+        left: 0;
     }
 
     70% {
@@ -144,8 +140,8 @@ body {
     }
 
     100% {
-        top: - 35vh;
-        left: - 35vw;
+        top: -35vh;
+        left: -35vw;
         opacity: 0;
     }
 }
@@ -153,7 +149,7 @@ body {
 @keyframes corner-2 {
     0% {
         top: 0;
-        left: 0
+        left: 0;
     }
 
     70% {
@@ -161,7 +157,7 @@ body {
     }
 
     100% {
-        top: - 35vh;
+        top: -35vh;
         left: 35vw;
         opacity: 0;
     }
@@ -170,7 +166,7 @@ body {
 @keyframes corner-3 {
     0% {
         top: 0;
-        left: 0
+        left: 0;
     }
 
     70% {
@@ -179,7 +175,7 @@ body {
 
     100% {
         top: 35vh;
-        left: - 35vw;
+        left: -35vw;
         opacity: 0;
     }
 }
@@ -187,7 +183,7 @@ body {
 @keyframes corner-4 {
     0% {
         top: 0;
-        left: 0
+        left: 0;
     }
 
     70% {
